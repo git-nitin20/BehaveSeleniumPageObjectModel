@@ -1,5 +1,3 @@
-from selenium.webdriver.common.by import By
-
 from features.pages.AccountSuccessPage import AccountSuccessPage
 from features.pages.BasePage import BasePage
 
