@@ -22,7 +22,7 @@ def step_impl(context):
 
 @then(u'Valid product should get displayed in Search results')
 def step_impl(context):
-    assert context.search_page.display_status_of_product()
+    assert context.search_page.display_status_of_searched_product()
 
 
 @when(u'I enter invalid product say "{product}" into the Search box field')
@@ -33,7 +33,7 @@ def step_impl(context, product):
 @then(u'Proper message should be displayed in Search results')
 def step_impl(context):
     expected_text = "There is no product that matches the search criteria.aaaaa"
-    assert context.search_page.display_status_of_message(expected_text)
+    assert context.search_page.display_status_of_search_result_message(expected_text)
 
 
 @when(u'I dont enter anything into Search box field')

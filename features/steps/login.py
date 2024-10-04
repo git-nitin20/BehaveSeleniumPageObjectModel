@@ -1,12 +1,6 @@
-from datetime import datetime
-
 from behave import *
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 
-from features.pages.AccountPage import AccountPage
 from features.pages.HomePage import HomePage
-from features.pages.LoginPage import LoginPage
 from utilities import EmailWithTimeStampGenerator
 
 

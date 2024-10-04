@@ -1,4 +1,4 @@
-from features.pages.AccountPage import AccountPage
+from features.pages.MyAccountPage import MyAccountPage
 from features.pages.BasePage import BasePage
 
 
@@ -20,7 +20,7 @@ class LoginPage(BasePage):
 
     def click_on_login_button(self):
         self.click_on_element("login_button_xpath",self.login_button_xpath)
-        return AccountPage(self.driver)
+        return MyAccountPage(self.driver)
 
     def display_status_of_warning_message(self,expected_warning_text):
         return self.retrieved_element_text_contains(

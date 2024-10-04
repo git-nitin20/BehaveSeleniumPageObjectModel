@@ -1,4 +1,4 @@
-from features.pages.AccountSuccessPage import AccountSuccessPage
+from features.pages.AccountCreatedPage import AccountCreatedPage
 from features.pages.BasePage import BasePage
 
 
@@ -47,7 +47,7 @@ class RegisterPage(BasePage):
 
     def click_on_continue_button(self):
         self.click_on_element("continue_button_xpath",self.continue_button_xpath)
-        return AccountSuccessPage(self.driver)
+        return AccountCreatedPage(self.driver)
 
     def select_yes_newsletter_option(self):
         self.click_on_element("yes_radio_option_xpath",self.yes_radio_option_xpath)
